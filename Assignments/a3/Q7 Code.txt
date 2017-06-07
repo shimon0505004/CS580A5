@@ -1,0 +1,40 @@
+1. /** *****************************************************
+2. * Finds and prints n prime integers
+3. * Jeff Offutt, Spring 2003
+4. ********************************************************* */
+5. private static void printPrimes (int n)
+6. {
+7. 		int curPrime; // Value currently considered for primeness
+8. 		int numPrimes; // Number of primes found so far.
+9. 		boolean isPrime; // Is curPrime prime?
+10. 	int [] primes = new int [MAXPRIMES]; // The list of prime numbers.
+11.
+12. 	// Initialize 2 into the list of primes.
+13. 	primes [0] = 2;
+14. 	numPrimes = 1;
+15. 	curPrime = 2;
+16. 	while (numPrimes < n)
+17. 	{
+18. 		curPrime++; // next number to consider ...
+19. 		isPrime = true;
+20. 		for (int i = 0; i <= numPrimes-1; i++)
+21. 		{ // for each previous prime.
+22. 			if (isDivisible (primes[i], curPrime))
+23. 			{ // Found a divisor, curPrime is not prime.
+24. 				isPrime = false;
+25. 				break; // out of loop through primes.
+26. 			}
+27. 		}
+28. 		if (isPrime)
+29. 		{ // save it!
+30. 			primes[numPrimes] = curPrime;
+31. 			numPrimes++;
+32. 		}	
+33. 	} // End while
+34.
+35. 	// Print all the primes out.
+36. 	for (int i = 0; i <= numPrimes-1; i++)
+37. 	{
+38. 		System.out.println ("Prime: " + primes[i]);
+39. 	}
+40. } // end printPrimes

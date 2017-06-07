@@ -1,0 +1,17 @@
+First fault:
+1) King.java, line 13. 
+Original statement: if(color==Color.BLACK)
+Modified statement: if(color==Color.WHITE)
+
+78/909 test cases caught this error
+RegressionTest0
+78,85,91,93,98,103,112,117,129,143,167,175,177,182,188,209,219,220,
+238,281,306,339,340,359,366,390,391,398,408,412,422,427,435,440,448,470,498,500
+RegressionTest1
+05,06,031,062,069,075,078,080,094,096,109,139,151,163,168,172,175,181,190,196,
+223,230,231,235,237,243,255,256,294,306,324,329,331,340,362,367,371,374,384
+
+
+2) ChessBoard.java, line 17
+original statement: wpawns[i] = new Pawn(this, ChessPiece.Color.WHITE);
+Modified statement: wpawns[i] = new Pawn(this, ChessPiece.Color.BLACK);	

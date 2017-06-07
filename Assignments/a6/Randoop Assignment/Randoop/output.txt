@@ -1,0 +1,32 @@
+policy = sun.security.provider.PolicyFile@448139f0
+Ignoring abstract class ChessPiece specified via --classlist or --testclass.
+PUBLIC MEMBERS=34
+Explorer = randoop.sequence.ForwardGenerator@4d76f3f8
+
+Progress update: test inputs generated=0, failing inputs=0      (Thu Apr 07 12:58:39 MDT 2016)
+Progress update: test inputs generated=316, failing inputs=0      (Thu Apr 07 12:58:44 MDT 2016)
+Progress update: test inputs generated=467, failing inputs=0      (Thu Apr 07 12:58:49 MDT 2016)
+Progress update: test inputs generated=626, failing inputs=0      (Thu Apr 07 12:58:54 MDT 2016)
+Progress update: test inputs generated=753, failing inputs=0      (Thu Apr 07 12:58:59 MDT 2016)
+Progress update: test inputs generated=878, failing inputs=0      (Thu Apr 07 12:59:04 MDT 2016)
+Progress update: test inputs generated=1038, failing inputs=0      (Thu Apr 07 12:59:09 MDT 2016)
+Progress update: test inputs generated=1162, failing inputs=0      (Thu Apr 07 12:59:14 MDT 2016)
+Progress update: test inputs generated=1295, failing inputs=0      (Thu Apr 07 12:59:19 MDT 2016)
+Progress update: test inputs generated=1421, failing inputs=0      (Thu Apr 07 12:59:24 MDT 2016)
+Progress update: test inputs generated=1523, failing inputs=0      (Thu Apr 07 12:59:29 MDT 2016)
+Progress update: test inputs generated=1653, failing inputs=0      (Thu Apr 07 12:59:34 MDT 2016)
+Progress update: test inputs generated=1762, failing inputs=0      (Thu Apr 07 12:59:39 MDT 2016)
+Normal method executions:806217
+Exceptional method executions:244
+
+Average method execution time (normal termination):      0.0736
+Average method execution time (exceptional termination): 0.118
+
+No error-revealing tests to output
+                                                                                                                                                                                                       
+Regression test output:
+Writing 909 junit tests
+
+Created file: C:\Users\skshimon\Documents\Randoop\Chess_Output\RegressionTest0.java
+Created file: C:\Users\skshimon\Documents\Randoop\Chess_Output\RegressionTest1.java
+Created file: C:\Users\skshimon\Documents\Randoop\Chess_Output\RegressionTest.java

@@ -1,0 +1,502 @@
+Grading student : skshimon
+TOTAL POINTS: (Grader's Tests + Student's Tests + Implementation of Roman class - Penalties) = 13.1 + 1.5 + 10 - 0 = 24.6
+
+********** Implementation **********
+
+Total points possible for implementation 10.00
+Total points received for implementation: 10.00
+
+********** Implementation **********
+
+********** Start of Grader's JUNIT Tests **********
+	Please note that: 
+	 1. if an  InvalidNumberException should be thrown by a test, the
+	    'Expected value' will be shown to be true, i.e. correct exception thrown.
+	 2. if you used lowercase characters for the Roman numerals, they were 
+	    converted to uppercase and shown as the 'Computed value'.
+	 3. we avoided testing the grey areas, e.g. 'IIV' for 5 or 'VV', for 10 because 
+	    they are based on a more loose definition of Roman Numerals and some
+	    students may disallow it for stricter roman numerals definitions.
+	 4. we used 4001 as the upperbound and did not test 'MMMM' because the 
+	    specs was not clear on whether it is allowed or not (for strict rules 
+	    it would be disallowed)
+
+Test: Roman symbol for 1
+	Expected value is: I, Computed value is: I
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 5
+	Expected value is: V, Computed value is: V
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 10
+	Expected value is: X, Computed value is: X
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 50
+	Expected value is: L, Computed value is: L
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 100
+	Expected value is: C, Computed value is: C
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 500
+	Expected value is: D, Computed value is: D
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Roman symbol for 1000
+	Expected value is: M, Computed value is: M
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'I'
+	Expected value is: 1, Computed value is: 1
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'V'
+	Expected value is: 5, Computed value is: 5
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'X'
+	Expected value is: 10, Computed value is: 10
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'L'
+	Expected value is: 50, Computed value is: 50
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'C'
+	Expected value is: 100, Computed value is: 100
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'D'
+	Expected value is: 500, Computed value is: 500
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Decimal for 'M'
+	Expected value is: 1000, Computed value is: 1000
+		test checks that expected and computed values should be the same
+	Test passed. Since this is a preliminary test, no points are awarded for it.
+
+Test: Converting a null string to decimal must throw InvalidNumberException
+
+Test: Converting empty string to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: null
+		test checks that expected and computed values should be the same
+***	Test failed: 0/0.1 points
+
+Test: Converting roman numeral ' '(string That is a single space) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting roman numeral 'C M'(string containing an internal space) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting roman numeral ' M'(string with leading space(s), if you removed the space(s) prior to conversion please see GTA to get points returned) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting roman numeral 'M '(string with leading space(s), if you removed the space(s) prior to conversion please see GTA  to get points returned) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-noman numeral 'JCM' to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral 'CJM' to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral 'CMJ' to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral '\n' (contains a non-printable character) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral 'VIIII' (because four I's are too many) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral 'XXXXI' (because four X's are too many) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting non-roman numeral 'DCCCCL' (because four C'c are too many) to decimal must throw InvalidNumberException
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting null to roman must throw InvalidNumberException.
+
+Test: Converting -1 (a negative number) to roman must throw InvalidNumberException because it is out of bounds.
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting 0 to roman must throw InvalidNumberException because it is out of bounds.
+	Expected value is: true, Computed value is: true
+		test checks that expected and computed values should be the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting 4001 to roman must throw InvalidNumberExceptionbecause it is out of bounds.
+	Expected value is: true, Computed value is: null
+		test checks that expected and computed values should be the same
+***	Test failed: 0/0.1 points
+
+Test: Converting XII to decimal (using addition rule only).
+	Expected value is: 4, Computed value is: 12
+		test checks that expected and computed values should be not the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting 2450 to toman (using addition and subtraction rules).
+	Expected value is: CCXLVI, Computed value is: MMCDL
+		test checks that expected and computed values should be not the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting DXL to decimal (using addition and subtraction rules).
+	Expected value is: 400, Computed value is: 540
+		test checks that expected and computed values should be not the same
+	Test passed: +0.1/0.1 points
+
+Test: Converting 13 to roman numeral (using addition rules only)
+	Expected value is: XII, Computed value is: XII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 123 to roman numeral (using addition rules only))
+	Expected value is: CXXIII, Computed value is: CXXIII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 1235 to roman numeral (using addition rules only)
+	Expected value is: MCCXXXV, Computed value is: MCCXXXV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 2052 to roman numeral (using addition rules only)
+	Expected value is: MMLII, Computed value is: MMLII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 3367 to roman numeral (using addition rules only)
+	Expected value is: MMMCCCLXVII, Computed value is: MMMCCCLXVII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 578 to roman numeral (using addition rules only)
+	Expected value is: DLXXVIII, Computed value is: DLXXVIII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 806 to roman numeral (using addition rules only)
+	Expected value is: DCCCVI, Computed value is: DCCCVI
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 80 to roman numeral (using addition rules only)
+	Expected value is: LXXX, Computed value is: LXXX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 70 to roman numeral (using addition rules only)
+	Expected value is: DCLXX, Computed value is: DCLXX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 713 to roman numeral (using addition rules only)
+	Expected value is: DCCXI, Computed value is: DCCXI
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 49 to roman numeral (using subtraction rules)
+	Expected value is: XLIX, Computed value is: XLIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 490 to roman numeral (using subtraction rules)
+	Expected value is: CDXC, Computed value is: CDXC
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 949 to roman numeral (using subtraction rules)
+	Expected value is: CMXLIX, Computed value is: CMXLIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 904 to roman numeral (using subtraction rules)
+	Expected value is: CMIV, Computed value is: CMIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 24 to roman numeral (using addition and subtraction rules)
+	Expected value is: XXIV, Computed value is: XXIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 48 to roman numeral (using addition and subtraction rules)
+	Expected value is: XLVIII, Computed value is: XLVIII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 145 to roman numeral (using addition and subtraction rules)
+	Expected value is: CXLV, Computed value is: CXLV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 289 to roman numeral (using addition and subtraction rules)
+	Expected value is: CCLXXXIX, Computed value is: CCLXXXIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 341 to roman numeral (using addition and subtraction rules)
+	Expected value is: CCCXLI, Computed value is: CCCXLI
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 364 to roman numeral (using addition and subtraction rules)
+	Expected value is: CCCLXIV, Computed value is: CCCLXIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 476 to roman numeral (using addition and subtraction rules)
+	Expected value is: CDLXXVI, Computed value is: CDLXXVI
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 509 to roman numeral (using addition and subtraction rules)
+	Expected value is: DIX, Computed value is: DIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 543 to roman numeral (using addition and subtraction rules)
+	Expected value is: DXLIII, Computed value is: DXLIII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 793 to roman numeral (using addition and subtraction rules)
+	Expected value is: DCCXCIII, Computed value is: DCCXCIII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 892 to roman numeral (using addition and subtraction rules)
+	Expected value is: DCCCXCII, Computed value is: DCCCXCII
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 929 to roman numeral (using addition and subtraction rules)
+	Expected value is: CMXXIX, Computed value is: CMXXIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 960 to roman numeral (using addition and subtraction rules)
+	Expected value is: CMLX, Computed value is: CMLX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 1094 to roman numeral (using addition and subtraction rules)
+	Expected value is: MXCIV, Computed value is: MXCIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 1234 to roman numeral (using addition and subtraction rules)
+	Expected value is: MCCXXXIV, Computed value is: MCCXXXIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 2169 to roman numeral (using addition and subtraction rules)
+	Expected value is: MMCLXIX, Computed value is: MMCLXIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 3614 to roman numeral (using addition and subtraction rules)
+	Expected value is: MMMDCXIV, Computed value is: MMMDCXIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 3749 to roman numeral (using addition and subtraction rules)
+	Expected value is: MMMDCCXLIX, Computed value is: MMMDCCXLIX
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'II'  to decimal (using addition rules only).
+	Expected value is: 2, Computed value is: 2
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'VI'  to decimal (using addition rules only).
+	Expected value is: 6, Computed value is: 6
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'XXI'  to decimal (using addition rules only).
+	Expected value is: 21, Computed value is: 21
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'LXIII'  to decimal (using addition rules only).
+	Expected value is: 63, Computed value is: 63
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'LXXXV'  to decimal (using addition rules only).
+	Expected value is: 85, Computed value is: 85
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'CXII'  to decimal (using addition rules only).
+	Expected value is: 112, Computed value is: 112
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'CCLV'  to decimal (using addition rules only).
+	Expected value is: 255, Computed value is: 255
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'DCLXVI'  to decimal (using addition rules only).
+	Expected value is: 665, Computed value is: 665
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'DCCCI'  to decimal (using addition rules only).
+	Expected value is: 801, Computed value is: 801
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'MX'  to decimal (using addition rules only).
+	Expected value is: 1010, Computed value is: 1010
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'MMDCV'  to decimal (using addition rules only).
+	Expected value is: 2605, Computed value is: 2605
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'MMMCV'  to decimal (using addition rules only).
+	Expected value is: 3105, Computed value is: 3105
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'IV'  to decimal (using addition rules only).
+	Expected value is: 4, Computed value is: 4
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'IX'  to decimal (using addition rules only).
+	Expected value is: 9, Computed value is: 9
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'XL'  to decimal (using addition rules only).
+	Expected value is: 40, Computed value is: 40
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'XC'  to decimal (using addition rules only).
+	Expected value is: 90, Computed value is: 90
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'CD'  to decimal (using addition rules only).
+	Expected value is: 400, Computed value is: 400
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 'CM'  to decimal (using addition rules only).
+	Expected value is: 900, Computed value is: 900
+		test checks that expected and computed values should be the same
+	Test passed: +0.2/0.2 points
+
+Test: Converting 1 to roman and back to decimal.
+	Expected value is: 1, Computed value is: 1
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Test: Converting 3999 to roman and back to decimal (using addition and subtraction rules).
+	Expected value is: 3999, Computed value is: 3999
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Test: Converting 3001 to roman and back to decimal (using addition and subtraction rules).
+	Expected value is: 3001, Computed value is: 3001
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Test: Converting 'XIV' to decimal and back to roman (using addition and subtraction rules).
+	Expected value is: XIV, Computed value is: XIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Test: Converting 'CCXCIV' to decimal and back to roman (using addition and subtraction rules).
+	Expected value is: CCXCIV, Computed value is: CCXCIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Test: Converting 'MXLIV' to decimal and back to roman (using addition and subtraction rules).
+	Expected value is: MXLIV, Computed value is: MXLIV
+		test checks that expected and computed values should be the same
+	Test passed: +0.25/0.25 points
+
+Total Tests: 90
+Tests Passed: 86
+Tests Failed: 4
+Total points possible from grader's tests: 13.50
+Total points received from grader's tests: 13.10
+********** End of Grader's JUNIT Tests **********
+
+********** Start of Running Student's JUNIT Tests **********
+Total Student Tests: 2
+Tests Passed: 2
+Tests failed: 0
+Failure Messages 
+[]
+Points for Student's Tests (1-(Failed/Total)*1.5)): 1.50
+
+Does the Student test toRoman(...) and toDecimal(...)?
+		toRoman	toDecimal
+	YES	
+If NO, List methods not tested(subtract one point for each method not tested)
+		N/A
+
+Other notes on Student's tests
+	NONE
+
+
+Points for Student's Tests: 1.5 /1.5
+********** End of Running Student's JUNIT Tests **********
+
+**********Start  Penalties  **********
+Penalties Applied
+	NONE
+Other notes on Penalties style
+	NONE
+
+**********End Penalties  **********

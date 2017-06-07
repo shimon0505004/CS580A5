@@ -1,0 +1,9 @@
+Bishop
+ChessBoard
+ChessPiece$Color
+ChessPiece
+King
+Knight
+Pawn
+Queen
+Rook
